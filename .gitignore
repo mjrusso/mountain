@@ -1,6 +1,7 @@
 *.py[cod]
 *.py-e
 *.swp
+__pycache__
 chinook
 runserver.py
 htmlcov
