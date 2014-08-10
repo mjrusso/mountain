@@ -1,11 +1,4 @@
-# -*- coding: utf-8 -*-
 
-import os
-
-from mountain.join import expand_manifest
-
-
-EXPECTED_EXPANDED_MANIFEST = """
 # 1
 
 [[#include one]]
@@ -75,16 +68,3 @@ EXPECTED_EXPANDED_MANIFEST = """
 [[#include three-two-d]]
 
 [[#include three-two-e]]
-"""
-
-class TestExpandManifest(object):
-
-    def test_expand_manifest(self):
-
-        actual = expand_manifest(
-            os.path.join(
-                os.path.dirname(os.path.realpath(__file__)),
-                "fixture",
-                "manifest.fountain"))
-
-        assert actual == EXPECTED_EXPANDED_MANIFEST

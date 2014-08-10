@@ -8,10 +8,6 @@ import sys
 from .join import expand_manifest
 
 
-def foo(a, b):
-    return a + b + 2
-
-
 def join(manifest_path, output_path):
     print("Reading manifest from `%s`." % manifest_path)
     with codecs.open(output_path, "w", "utf-8") as f:
