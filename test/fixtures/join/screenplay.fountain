@@ -25,7 +25,11 @@
 
 ## 2.1
 
-[[ #include part ii/one-a.markdown ]]
+[[#reference part ii/one-a.markdown]]
+
+1-A
+
+[[#end-reference part ii/one-a.markdown]]
 
 [[#reference part ii/one-b.mdown]]
 
@@ -33,9 +37,17 @@
 
 [[#end-reference part ii/one-b.mdown]]
 
-[[#include part ii/one-c.md        ]]
+[[#reference part ii/one-c.md]]
 
-[[ #include part ii/one-d.md     ]]
+1-C
+
+[[#end-reference part ii/one-c.md]]
+
+[[#reference part ii/one-d.md]]
+
+1-D
+
+[[#end-reference part ii/one-d.md]]
 
 ## 2.2
 

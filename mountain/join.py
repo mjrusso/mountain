@@ -29,6 +29,8 @@ def expand_manifest(manifest_path):
 
     for file_name in referenced_file_names:
 
+        file_name = file_name.strip()
+
         for extension in ("",) + KNOWN_EXTENSIONS:
 
             file_path = os.path.join(base_path, file_name + extension)
