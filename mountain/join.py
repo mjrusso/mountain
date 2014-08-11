@@ -42,9 +42,9 @@ def expand_manifest(manifest_path):
                     "\[\[\s*#include\s+%s\s*\]\]" % file_name,
                     "".join([
                         "[[#reference %s]]" % file_name,
-                        "\n\n",
-                         referenced_file,
-                        "\n",
+                        "\n" if referenced_file.startswith("\n") else "\n\n",
+                        referenced_file,
+                        "\n" if referenced_file.endswith("\n") else "\n\n",
                         "[[#end-reference %s]]" % file_name,
                     ]),
                     manifest)
