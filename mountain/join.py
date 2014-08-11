@@ -40,9 +40,12 @@ def expand_manifest(manifest_path):
 
                 manifest = re.sub(
                     "\[\[\s*#include\s+%s\s*\]\]" % file_name,
-                    "\n\n".join([
+                    "".join([
                         "[[#reference %s]]" % file_name,
-                         referenced_file
+                        "\n\n",
+                         referenced_file,
+                        "\n",
+                        "[[#reference-end %s]]" % file_name,
                     ]),
                     manifest)
 
