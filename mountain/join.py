@@ -45,7 +45,7 @@ def expand_manifest(manifest_path):
                         "\n\n",
                          referenced_file,
                         "\n",
-                        "[[#reference-end %s]]" % file_name,
+                        "[[#end-reference %s]]" % file_name,
                     ]),
                     manifest)
 
