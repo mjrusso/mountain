@@ -5,7 +5,7 @@
 
 1
 
-[[#end-reference one]]
+[[#reference-end]]
 
 ## 1.1
 
@@ -13,7 +13,7 @@
 
 1-1
 
-[[#end-reference one-one]]
+[[#reference-end]]
 
 # 2
 
@@ -21,7 +21,7 @@
 
 2
 
-[[#end-reference two.fountain]]
+[[#reference-end]]
 
 ## 2.1
 
@@ -29,25 +29,25 @@
 
 1-A
 
-[[#end-reference part ii/one-a.markdown]]
+[[#reference-end]]
 
 [[#reference part ii/one-b.mdown]]
 
 1-B
 
-[[#end-reference part ii/one-b.mdown]]
+[[#reference-end]]
 
 [[#reference part ii/one-c.md]]
 
 1-C
 
-[[#end-reference part ii/one-c.md]]
+[[#reference-end]]
 
 [[#reference part ii/one-d.md]]
 
 1-D
 
-[[#end-reference part ii/one-d.md]]
+[[#reference-end]]
 
 ## 2.2
 
@@ -55,7 +55,7 @@
 
 2
 
-[[#end-reference part ii/two.txt]]
+[[#reference-end]]
 
 ## 2.3
 
@@ -63,7 +63,7 @@
 
 A
 
-[[#end-reference part ii/subpart iii/a]]
+[[#reference-end]]
 
 ### 2.3.1
 
@@ -71,7 +71,7 @@ A
 
 One
 
-[[#end-reference part ii/subpart iii/1]]
+[[#reference-end]]
 
 ### 2.3.2
 
@@ -79,7 +79,7 @@ One
 
 Two
 
-[[#end-reference part ii/subpart iii/2]]
+[[#reference-end]]
 
 ### 2.3.3
 
@@ -87,7 +87,7 @@ Two
 
 Three
 
-[[#end-reference part ii/subpart iii/3]]
+[[#reference-end]]
 
 ### 2.3.4
 
@@ -95,7 +95,7 @@ Three
 
 Four
 
-[[#end-reference part ii/subpart iii/4]]
+[[#reference-end]]
 
 ## 2.4
 
@@ -103,7 +103,7 @@ Four
 
 4
 
-[[#end-reference part ii/four.txt]]
+[[#reference-end]]
 
 # 3
 
@@ -111,7 +111,7 @@ Four
 
 3
 
-[[#end-reference three]]
+[[#reference-end]]
 
 ## 3.1
 
@@ -123,28 +123,28 @@ Four
 
 3-2-A
 
-[[#end-reference three-two-a]]
+[[#reference-end]]
 
 [[#reference three-two-b]]
 
 3-2-B
 
-[[#end-reference three-two-b]]
+[[#reference-end]]
 
 [[#reference three-two-c]]
 
 3-2-C
 
-[[#end-reference three-two-c]]
+[[#reference-end]]
 
 [[#reference three-two-d]]
 
 3-2-D
 
-[[#end-reference three-two-d]]
+[[#reference-end]]
 
 [[#reference three-two-e]]
 
 3-2-E
 
-[[#end-reference three-two-e]]
+[[#reference-end]]
