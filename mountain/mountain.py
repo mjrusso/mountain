@@ -6,6 +6,7 @@ import codecs
 import sys
 
 from .join import expand_manifest
+from .split import split_combined_document
 
 
 def join(manifest_path, output_path):
@@ -15,8 +16,11 @@ def join(manifest_path, output_path):
         f.write(manifest)
     print("Wrote expanded manifest to `%s`." % output_path)
 
-def split(manifest_path, output_path):
-    pass
+def split(manifest_path, combined_document_path):
+    print("Reading manifest from `%s`." % manifest_path)
+    print("Reading combined document from `%s`." % combined_document_path)
+    split_combined_document(manifest_path, combined_document_path)
+    print("Updated manifest and all referenced files.")
 
 def help():
     version()
