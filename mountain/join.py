@@ -4,8 +4,10 @@ import codecs
 import os
 import re
 
+from .utils import queue_file_write
 
-def expand_manifest(manifest_path):
+
+def expand_manifest(manifest_path, combined_document_path):
 
     with codecs.open(manifest_path, "r", "utf-8") as f:
         manifest = f.read()
@@ -36,4 +38,4 @@ def expand_manifest(manifest_path):
                 ]),
                 manifest)
 
-    return manifest
+    return queue_file_write(list(), combined_document_path, manifest)

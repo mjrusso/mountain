@@ -4,11 +4,8 @@ import codecs
 import os
 import re
 
+from .utils import queue_file_write
 
-def write_file(path, contents):
-    with codecs.open(path, "w", "utf-8") as f:
-        f.write(contents)
-        print("Wrote `%s`." % path)
 
 def split_combined_document(manifest_path, combined_document_path):
 
@@ -24,6 +21,8 @@ def split_combined_document(manifest_path, combined_document_path):
 
     manifest = combined_document
 
+    write_queue = list()
+
     for file_name, file_contents in references:
         file_name = file_name.strip()
         file_path = os.path.join(base_path, file_name)
@@ -32,7 +31,7 @@ def split_combined_document(manifest_path, combined_document_path):
         # Add the trailing newline that was just stripped away.
         file_contents = file_contents + "\n"
 
-        write_file(file_path, file_contents)
+        queue_file_write(write_queue, file_path, file_contents)
 
         manifest = re.sub(
             "\[\[#reference\s+%s\]\].*?\[\[#reference-end\]\]" % re.escape(file_name),
@@ -42,6 +41,4 @@ def split_combined_document(manifest_path, combined_document_path):
             re.DOTALL
         )
 
-    write_file(manifest_path, manifest)
-
-    return manifest
+    return queue_file_write(write_queue, manifest_path, manifest)

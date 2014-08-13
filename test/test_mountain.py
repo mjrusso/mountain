@@ -15,9 +15,10 @@ class TestExpandManifest(object):
                 os.path.dirname(os.path.realpath(__file__)),
                 "fixtures",
                 "example",
-                "manifest.fountain"))
+                "manifest.fountain"),
+            "test-path")
 
-        expected = codecs.open(
+        expected_contents = codecs.open(
             os.path.join(
                 os.path.dirname(os.path.realpath(__file__)),
                 "fixtures",
@@ -26,6 +27,8 @@ class TestExpandManifest(object):
             "r",
             "utf-8"
         ).read()
+
+        expected = [{"path": "test-path", "contents": expected_contents}]
 
         assert actual == expected
 
@@ -36,9 +39,10 @@ class TestExpandManifest(object):
                 os.path.dirname(os.path.realpath(__file__)),
                 "fixtures",
                 "join",
-                "manifest.fountain"))
+                "manifest.fountain"),
+            "test-path")
 
-        expected = codecs.open(
+        expected_contents = codecs.open(
             os.path.join(
                 os.path.dirname(os.path.realpath(__file__)),
                 "fixtures",
@@ -47,5 +51,7 @@ class TestExpandManifest(object):
             "r",
             "utf-8"
         ).read()
+
+        expected = [{"path": "test-path", "contents": expected_contents}]
 
         assert actual == expected

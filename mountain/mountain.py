@@ -2,24 +2,22 @@
 
 __version__ = "0.1.0"
 
-import codecs
+
 import sys
 
 from .join import expand_manifest
 from .split import split_combined_document
+from .utils import write_files
 
 
-def join(manifest_path, output_path):
+def join(manifest_path, combined_document_path):
     print("Reading manifest from `%s`." % manifest_path)
-    with codecs.open(output_path, "w", "utf-8") as f:
-        manifest = expand_manifest(manifest_path)
-        f.write(manifest)
-    print("Wrote expanded manifest to `%s`." % output_path)
+    write_files(expand_manifest(manifest_path, combined_document_path))
+    print("Finished expanding manifest.")
 
 def split(manifest_path, combined_document_path):
-    print("Reading manifest from `%s`." % manifest_path)
     print("Reading combined document from `%s`." % combined_document_path)
-    split_combined_document(manifest_path, combined_document_path)
+    write_files(split_combined_document(manifest_path, combined_document_path))
     print("Updated manifest and all referenced files.")
 
 def help():
