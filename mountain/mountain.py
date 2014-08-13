@@ -43,15 +43,9 @@ files will be overwritten if they already exist.
 All included files in <combined-document-path> must be indicated with the
 [[#reference file-path]] ... [[#reference-end]] directive.
 
-For more details, see the README:
+For more details, see https://github.com/mjrusso/mountain.
 
-    $ mountain --readme
 """)
-
-def readme():
-    with open("README.md", "rb") as f:
-        print("\n")
-        print(f.read().decode("utf-8"))
 
 def version():
     print("Mountain v%s." % __version__)
@@ -72,8 +66,6 @@ def main():
         version()
     elif args[0] in ("--help", "help"):
         help()
-    elif args[0] == "--readme":
-        readme()
     else:
         print("Invalid option specified.")
         help()
