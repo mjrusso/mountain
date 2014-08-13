@@ -68,9 +68,9 @@ def main():
         join(args[1], args[2])
     elif args[0] == "split":
         split(args[1], args[2])
-    elif args[0] == "--version":
+    elif args[0] in ("--version", "version"):
         version()
-    elif args[0] == "--help":
+    elif args[0] in ("--help", "help"):
         help()
     elif args[0] == "--readme":
         readme()
