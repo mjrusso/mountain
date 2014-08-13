@@ -22,6 +22,36 @@ def split(manifest_path, combined_document_path):
 
 def help():
     version()
+    print("""
+Usage:
+
+    $ mountain join <manifest-path> <combined-document-path>
+
+Combine all files referenced from <manifest-path> into the document at
+<combined-document-path>. The file at <combined-document-path> will be
+overwritten if it already exists.
+
+The files referenced from <manifest-path> must be referenced with the
+[[#include file-path]] directive.
+
+    $ mountain split <manifest-path> <combined-document-path>
+
+Write all included files from <combined-document-path> into standalone files.
+Produce an updated manifest file and write to <manifest-path>. In all cases,
+files will be overwritten if they already exist.
+
+All included files in <combined-document-path> must be indicated with the
+[[#reference file-path]] ... [[#reference-end]] directive.
+
+For more details, see the README:
+
+    $ mountain --readme
+""")
+
+def readme():
+    with open("README.md", "rb") as f:
+        print("\n")
+        print(f.read().decode("utf-8"))
 
 def version():
     print("Mountain v%s." % __version__)
@@ -42,6 +72,8 @@ def main():
         version()
     elif args[0] == "--help":
         help()
+    elif args[0] == "--readme":
+        readme()
     else:
         print("Invalid option specified.")
         help()
