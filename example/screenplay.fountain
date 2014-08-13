@@ -2,13 +2,38 @@
 
 = Meet the **Hero**—their **world,** what they **want,** what they **fear.**
 
-[[#include intro.fountain]]
+[[#reference intro.fountain]]
+
+EXT. VAST OPEN SPACE - DAY
+
+The sun shines.
+
+NARRATOR (V.O.)
+Hello, friends.
+
+It starts raining.
+
+NARRATOR (V.O.)
+We are about to embark on a fantastic voyage.
+
+[[#reference-end]]
 
 ## Inciting Incident (⅛)
 
 = Your Hero's **worst fears** realized.
 
-[[#include inciting-incident.fountain]]
+[[#reference inciting-incident.fountain]]
+
+EXT. VAST OPEN SPACE - DAY [LATER]
+
+A terrible storm.
+
+NARRATOR (V.O.)
+Oh dear! Oh my oh my oh my!
+
+The world is swallowed up by buckets of torrential rain.
+
+[[#reference-end]]
 
 # ACT II (¼)
 
@@ -44,7 +69,20 @@
 
 = The Hero confronts that obstacle by making a **leap of faith** that allows them to overcome it.
 
-[[#include the-end.fountain]]
+[[#reference the-end.fountain]]
+
+EXT. VAST OPEN SPACE - DAY [LATER]
+
+The storm has destroyed the world.
+
+No one saved the day.
+
+No one rose to the occasion.
+
+NARRATOR (V.O.)
+Goodbye, friends.
+
+[[#reference-end]]
 
 >FADE TO BLACK.
 

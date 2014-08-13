@@ -1,11 +1,11 @@
 
 # 1
 
-[[#include one]]
+[[#include one.fountain]]
 
 ## 1.1
 
-[[#include one-one]]
+[[#include one-one.fountain]]
 
 # 2
 
@@ -13,13 +13,13 @@
 
 ## 2.1
 
-[[ #include part ii/one-a.markdown ]]
+[[ #include part ii/one-a.fountain ]]
 
-[[    #include part ii/one-b.mdown]]
+[[    #include part ii/one-b.fountain]]
 
-[[#include part ii/one-c.md        ]]
+[[#include part ii/one-c.fountain        ]]
 
-[[ #include part ii/one-d.md     ]]
+[[ #include part ii/one-d.fountain    ]]
 
 ## 2.2
 
@@ -27,23 +27,25 @@
 
 ## 2.3
 
-[[#include part ii/subpart iii/a]]
+[[#include part ii/subpart iii/a.md]]
+
+[[#include part ii/subpart iii/b.txt]]
 
 ### 2.3.1
 
-[[#include part ii/subpart iii/1]]
+[[#include part ii/subpart iii/1.fountain]]
 
 ### 2.3.2
 
-[[#include part ii/subpart iii/2]]
+[[#include part ii/subpart iii/2.md]]
 
 ### 2.3.3
 
-[[#include part ii/subpart iii/3]]
+[[#include part ii/subpart iii/3.txt]]
 
 ### 2.3.4
 
-[[#include part ii/subpart iii/4]]
+[[#include part ii/subpart iii/4.fountain]]
 
 ## 2.4
 
@@ -51,7 +53,7 @@
 
 # 3
 
-[[#include three]]
+[[#include three.fountain]]
 
 ## 3.1
 
@@ -59,12 +61,12 @@
 
 ## 3.2
 
-[[#include three-two-a]]
+[[#include three-two-a.fountain]]
 
-[[#include three-two-b]]
+[[#include three-two-b.fountain]]
 
-[[#include three-two-c]]
+[[#include three-two-c.fountain]]
 
-[[#include three-two-d]]
+[[#include three-two-d.fountain]]
 
-[[#include three-two-e]]
+[[#include three-two-e.fountain]]
