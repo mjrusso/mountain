@@ -31,6 +31,9 @@ def version():
 def main():
     args = sys.argv[1:]
 
+    if sys.version_info[0] == 2 and sys.version_info[1] < 7:
+        raise Exception("Python >= 2.7 required. Aborting.")
+
     if not len(args):
         help()
     elif args[0] == "join":
