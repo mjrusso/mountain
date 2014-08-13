@@ -15,7 +15,7 @@ class TestExpandManifest(object):
             os.path.join(
                 os.path.dirname(os.path.realpath(__file__)),
                 "fixtures",
-                "example",
+                "simple",
                 "manifest.fountain"),
             "test-path")
 
@@ -23,7 +23,7 @@ class TestExpandManifest(object):
             os.path.join(
                 os.path.dirname(os.path.realpath(__file__)),
                 "fixtures",
-                "example",
+                "simple",
                 "screenplay.fountain"),
             "r",
             "utf-8"
@@ -39,7 +39,7 @@ class TestExpandManifest(object):
             os.path.join(
                 os.path.dirname(os.path.realpath(__file__)),
                 "fixtures",
-                "join",
+                "complex",
                 "manifest.fountain"),
             "test-path")
 
@@ -47,7 +47,7 @@ class TestExpandManifest(object):
             os.path.join(
                 os.path.dirname(os.path.realpath(__file__)),
                 "fixtures",
-                "join",
+                "complex",
                 "screenplay.fountain"),
             "r",
             "utf-8"
@@ -66,20 +66,20 @@ class TestSplitCombinedDocument(object):
             os.path.join(
                 os.path.dirname(os.path.realpath(__file__)),
                 "fixtures",
-                "example",
+                "simple",
                 "manifest.fountain"),
             os.path.join(
                 os.path.dirname(os.path.realpath(__file__)),
                 "fixtures",
-                "example",
+                "simple",
                 "screenplay.fountain"))
 
         expected = list()
 
-        for path in ["fixtures/example/intro.fountain",
-                     "fixtures/example/inciting-incident.fountain",
-                     "fixtures/example/the-end.fountain",
-                     "fixtures/example/manifest.fountain"]:
+        for path in ["fixtures/simple/intro.fountain",
+                     "fixtures/simple/inciting-incident.fountain",
+                     "fixtures/simple/the-end.fountain",
+                     "fixtures/simple/manifest.fountain"]:
 
             path = os.path.join(
                        os.path.dirname(os.path.realpath(__file__)),
