@@ -26,7 +26,7 @@ def expand_manifest(manifest_path):
                 referenced_file = f.read()
 
             manifest = re.sub(
-                "\[\[\s*#include\s+%s\s*\]\]" % file_name,
+                "\[\[\s*#include\s+%s\s*\]\]" % re.escape(file_name),
                 "".join([
                     "[[#reference %s]]" % file_name,
                     "\n" if referenced_file.startswith("\n") else "\n\n",
