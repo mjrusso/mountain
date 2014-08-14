@@ -12,11 +12,11 @@ from .utils import write_files
 
 def join(manifest_path, combined_document_path):
     write_files(expand_manifest(manifest_path, combined_document_path))
-    print("Finished expanding manifest into single combined document.")
+    print(u"\u2713 Join complete. Expanded manifest into single combined document.")
 
 def split(manifest_path, combined_document_path):
     write_files(split_combined_document(manifest_path, combined_document_path))
-    print("Updated manifest and all referenced files.")
+    print(u"\u2713 Split complete. Updated manifest and wrote all referenced files.")
 
 def help():
     version()
