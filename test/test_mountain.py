@@ -11,37 +11,45 @@ class TestExpandManifest(object):
 
     def test_expand_manifest_simple(self):
 
+        combined_document_path = os.path.join(
+            os.path.dirname(os.path.realpath(__file__)),
+            "fixtures",
+            "simple",
+            "screenplay.fountain")
+
         actual = expand_manifest(
             os.path.join(
                 os.path.dirname(os.path.realpath(__file__)),
                 "fixtures",
                 "simple",
                 "manifest.fountain"),
-            "test-path")
+            combined_document_path)
 
         expected_contents = codecs.open(
-            os.path.join(
-                os.path.dirname(os.path.realpath(__file__)),
-                "fixtures",
-                "simple",
-                "screenplay.fountain"),
+            combined_document_path,
             "r",
             "utf-8"
         ).read()
 
-        expected = [{"path": "test-path", "contents": expected_contents}]
+        expected = [{"path": combined_document_path, "contents": expected_contents}]
 
         assert actual == expected
 
     def test_expand_manifest_complex(self):
 
+        combined_document_path = os.path.join(
+            os.path.dirname(os.path.realpath(__file__)),
+            "fixtures",
+            "complex",
+            "screenplay.fountain")
+
         actual = expand_manifest(
             os.path.join(
                 os.path.dirname(os.path.realpath(__file__)),
                 "fixtures",
                 "complex",
                 "manifest.fountain"),
-            "test-path")
+            combined_document_path)
 
         expected_contents = codecs.open(
             os.path.join(
@@ -53,7 +61,7 @@ class TestExpandManifest(object):
             "utf-8"
         ).read()
 
-        expected = [{"path": "test-path", "contents": expected_contents}]
+        expected = [{"path": combined_document_path, "contents": expected_contents}]
 
         assert actual == expected
 
