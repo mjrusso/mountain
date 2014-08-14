@@ -33,7 +33,7 @@ the concern of file organization.)
 
 Mountain makes it possible to arbitrarily organize the file layout of your
 screenplay. More specifically, it is a tool for intelligently splitting and
-combining files in the Fountain screenplay format\*.
+combining files in the Fountain screenplay format.\*
 
 _\* Technically, there's not really anything in Mountain that's
 Fountain-specific, besides the usage of the notes syntax (`[[ ]]`) to specify
@@ -200,7 +200,7 @@ A green, open field, stretching for miles in all directions.
 ```
 
 At this point, the combined document (_screenplay.fountain_) is the source of
-truth, as it some text that is not in several of the documents that it
+truth, as it has some text that is not in several of the documents that it
 references.
 
 To update the other documents (i.e., the manifest and each of the files it
