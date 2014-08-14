@@ -1,8 +1,8 @@
 # Mountain
 
-_Mountain makes it easy to split a single (Fountain-formatted) screenplay across
+Mountain makes it easy to split a single (Fountain-formatted) screenplay across
 multiple physical files, regardless of the screenwriting (or text editing)
-software that you're writing with._
+software that you're writing with.
 
 ## Introduction
 
