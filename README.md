@@ -1,5 +1,11 @@
 # Mountain
 
+_Mountain makes it easy to split a single (Fountain-formatted) screenplay across
+multiple physical files, regardless of the screenwriting (or text editing)
+software that you're writing with._
+
+## Introduction
+
 [Fountain](http://fountain.io) is a plain-text markup language for
 screenwriting.
 
@@ -11,13 +17,13 @@ This means that if you're storing your screenplay in multiple files (say, a
 file per scene or sequence), then you're likely fighting an uphill battle
 against your screenwriting software.
 
-This isn't Fountain's fault -- it's just a markup language, and file
+This isn't Fountain's fault — it's just a markup language, and file
 organization is a higher-level concern.
 
-That being said, we can change the equation by building tooling (see
+That being said, we can change the equation by building tooling. (See
 [Exhibit A](http://johnaugust.com/2014/fountain-for-coders-or-the-joy-of-writing)
 and [Exhibit B](http://slugline.co/blog/shotlists) for examples unrelated to
-the concern of file organization).
+the concern of file organization.)
 
 Mountain makes it possible to arbitrarily organize the file layout of your
 screenplay. More specifically, it is a tool for intelligently splitting and
@@ -31,8 +37,25 @@ workflow.
 
 _\* Technically, there's not really anything in Mountain that's
 Fountain-specific, besides the usage of the notes syntax (`[[ ]]`) to specify
-**directives**. However, it was built specifically to make working with long
-Fountain documents more palatable._
+"directives" (details below). However, it was built specifically to make
+working with long Fountain documents more palatable._
+
+## Directives
+
+Mountain makes use of two **directives**:
+
+- `#include`
+- `#reference` (and its companion, `/reference`)
+
+A directive is metadata that is encoded inside of Fountain note. (Fountain does
+not currently have first-class support for metadata.)
+
+`#include` enables a Fountain document to reference another Fountain document.
+
+`#reference ... /reference` is used to wrap a document thta has been inline
+`#include`d.
+
+(Examples are available in the following tutorial.)
 
 ## Installation
 
@@ -54,24 +77,7 @@ The following command will print detailed usage information:
 mountain --help
 ```
 
-There are two main commands available -- `mountain join`, and `mountain split`.
-
-### Directives
-
-Mountain makes use of two "**directives**:
-
-- `#include`
-- `#reference` (and its companion, `/reference`)
-
-A directive is metadata that is encoded inside of Fountain note. (Fountain does
-not currently have first-class support for metadata.)
-
-`#include` enables a Fountain document to reference another Fountain document.
-
-`#reference ... /reference` is used to wrap a document thta has been inline
-`#include`d.
-
-(Examples are available in the following tutorial.)
+There are two main commands available — `mountain join`, and `mountain split`.
 
 ### Tutorial
 
@@ -245,7 +251,7 @@ A green, open field, stretching for miles in all directions.
 Because this works bi-directionally, you can continue to run the `join` and
 `split` commands in any sequence you wish (just remember to keep track of what
 document(s) are the "source of truth", or you may inadvertently lose some work
--- Mountain overwrites files). Keep in mind that in most workflows, you won't
+— Mountain overwrites files). Keep in mind that in most workflows, you won't
 be frequently jumping back and forth between these two modes.
 
 ### Additional Notes
