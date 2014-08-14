@@ -102,10 +102,10 @@ _manifest.fountain_:
 [[#include the-end.fountain]]
 ```
 
-This file probably looks like a lot like how most Fountain screenplays start,
+This file probably looks similar to how most Fountain screenplays start out,
 with the exception of the two notes that begin with `#include`.
 
-Here, `#include` is a **directive** that points to another file that should be
+Here, `#include` is a directive that points to another file that should be
 included in its place.
 
 _intro.fountain_:
@@ -214,10 +214,11 @@ As with `mountain join`, the first argument is the path to the manifest file,
 and the second argument is the path to the combined document.
 
 After running this command, _manifest.fountain_ and _intro.fountain_ will
-update to reflect the changes (adding a new section header, and a line of
-action description, respectively). However, when we edited
-_screenplay.fountain_, we didn't make any changes to _the-end.fountain_, so
-there won't be any visible changes to that file.
+update to reflect the changes that were made to _screenplay.fountain_. (In
+particular, _manifest.fountain_ will gain a new section header, and
+_intro.fountain_ will gain a line of action description.) There won't be any
+visible changes to _the-end.fountain_, because we didn't make any changes to
+_screenplay.fountain_ that would affect this file.
 
 _manifest.fountain_:
 
