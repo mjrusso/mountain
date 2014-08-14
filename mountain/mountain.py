@@ -41,6 +41,16 @@ files will be overwritten if they already exist.
 All included files in <combined-document-path> must be indicated with the
 [[#reference file-path]] ... [[/reference]] directive.
 
+    $ mountain --version
+
+Print version number and exit.
+
+    $ mountain --help
+
+Print this help text and exit.
+
+Note:
+
 For more details, see https://github.com/mjrusso/mountain.
 
 """)
