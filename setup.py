@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
 
+# Python project structure reference:
+#
+# - http://www.jeffknupp.com/blog/2013/08/16/open-sourcing-a-python-project-the-right-way/
+# - http://gehrcke.de/2014/02/distributing-a-python-command-line-application/
+
 import re
 import sys
 
@@ -43,7 +48,7 @@ setup(
     extras_require={
         'testing': ['pytest'],
         },
-    description = "Python program for splitting and combining files in the Fountain screenplay format.",
+    description = "A tool for splitting and combining files in the Fountain screenplay format.",
     long_description = long_descr,
     author = "Michael Russo",
     author_email = "mjrusso@gmail.com",
