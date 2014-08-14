@@ -16,12 +16,12 @@ workflow.
 screenwriting.
 
 Fountain is awesome, but it can be somewhat cumbersome to use in practice
-because the vast majority of [Fountain apps](http://fountain.io/apps) assume
-that the entire screenplay is housed in a single file.
+because most [Fountain apps](http://fountain.io/apps) assume that the entire
+screenplay is housed in a single file.
 
-This means that if you're storing your screenplay in multiple files (say, a
-file per scene or sequence), then you're likely fighting an uphill battle
-against your screenwriting software.
+If you're storing your screenplay in multiple files (say, a file per scene or
+sequence), then you're likely fighting an uphill battle against your
+screenwriting software.
 
 This isn't Fountain's fault — it's just a markup language, and file
 organization is a higher-level concern.
@@ -29,14 +29,15 @@ organization is a higher-level concern.
 That being said, we can change the equation by building tooling. (See
 [Exhibit A](http://johnaugust.com/2014/fountain-for-coders-or-the-joy-of-writing)
 and [Exhibit B](http://slugline.co/blog/shotlists) for examples unrelated to
-the concern of file organization.)
+the concerns of file organization.)
 
 Mountain makes it possible to arbitrarily organize the file layout of your
 screenplay. More specifically, it is a tool for intelligently splitting and
 combining files in the Fountain screenplay format.\*
 
 _\* Technically, there's not really anything in Mountain that's
-Fountain-specific, besides the usage of the notes syntax (`[[ ]]`) to specify
+Fountain-specific, besides the usage of the
+[notes syntax](http://fountain.io/syntax#section-notes (`[[ ]]`)) to specify
 "directives" (details below). However, it was built specifically to make
 working with long Fountain documents more palatable._
 
