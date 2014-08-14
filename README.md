@@ -4,6 +4,12 @@ Mountain makes it easy to split a single (Fountain-formatted) screenplay across
 multiple physical files, regardless of the screenwriting (or text editing)
 software that you're writing with.
 
+See the
+[accompanying blog post](http://blog.mjrusso.com/2014/08/15/mountain-screenwriting-with-fountain.html)
+for more details on the specific motivations that led to this tool's creation,
+and why multi-file screenplays may be beneficial to your screenwriting
+workflow.
+
 ## Introduction
 
 [Fountain](http://fountain.io) is a plain-text markup language for
@@ -29,12 +35,6 @@ Mountain makes it possible to arbitrarily organize the file layout of your
 screenplay. More specifically, it is a tool for intelligently splitting and
 combining files in the Fountain screenplay format\*.
 
-See the accompanying
-[blog post](http://blog.mjrusso.com/2014/08/15/mountain-screenwriting-with-fountain.html)
-for more details on the specific motivations that led to this tool's creation,
-and why multi-file screenplays may be beneficial to your screenwriting
-workflow.
-
 _\* Technically, there's not really anything in Mountain that's
 Fountain-specific, besides the usage of the notes syntax (`[[ ]]`) to specify
 "directives" (details below). However, it was built specifically to make
@@ -47,15 +47,15 @@ Mountain makes use of two **directives**:
 - `#include`
 - `#reference` (and its companion, `/reference`)
 
-A directive is metadata that is encoded inside of Fountain note. (Fountain does
-not currently have first-class support for metadata.)
+A directive is metadata that is encoded inside of a Fountain note. (Fountain
+does not currently have first-class support for metadata.)
 
 `#include` enables a Fountain document to reference another Fountain document.
 
-`#reference ... /reference` is used to wrap a document thta has been inline
-`#include`d.
+`#reference ... /reference` is used to wrap a document that has been inline
+`#include`'d.
 
-(Examples are available in the following tutorial.)
+(Examples are available in the tutorial, below.)
 
 ## Installation
 
@@ -81,8 +81,8 @@ There are two main commands available — `mountain join`, and `mountain split`.
 
 ### Tutorial
 
-Create an outline file (or "manifest"). We'll call the file `manifest.fountain`
-for the purpose of this tutorial, but it can be named whatever you like.
+Create an outline file (or _"manifest"_). We'll call the file
+`manifest.fountain`, but it can be named whatever you like.
 
 _manifest.fountain_:
 
@@ -121,8 +121,6 @@ _the-end.fountain_:
 
 >THE END<
 ```
-
-This is the shell of our screenplay.
 
 To produce a single document from these disparate files, execute the following
 command:
@@ -164,7 +162,7 @@ FADE IN:
 This new document is a combination of _manifest.fountain_ and each of the files
 referenced in the manifest (_intro.fountain_, _the-end.fountain_). These
 referenced files are included in-line and wrapped in the `#reference ...
-/reference` directive.
+/reference` directives.
 
 Mountain works in both directions. To see this in action, edit the combined
 document (_screenplay.fountain_), so that it looks like this:
@@ -202,7 +200,8 @@ A green, open field, stretching for miles in all directions.
 ```
 
 At this point, the combined document (_screenplay.fountain_) is the source of
-truth, as it has information that isn't in a few of the other documents.
+truth, as it some text that is not in several of the documents that it
+references.
 
 To update the other documents (i.e., the manifest and each of the files it
 references), execute the following command:
@@ -211,14 +210,14 @@ references), execute the following command:
 mountain split manifest.fountain screenplay.fountain
 ```
 
-As with `mountain join`, the first argument is the path to the manifest file, and the
-second argument is the path to the combined document.
+As with `mountain join`, the first argument is the path to the manifest file,
+and the second argument is the path to the combined document.
 
 After running this command, _manifest.fountain_ and _intro.fountain_ will
 update to reflect the changes (adding a new section header, and a line of
-action description, respectively). When we edited _screenplay.fountain_ we
-didn't make any changes to _the-end.fountain_, so there won't be any visible
-changes to that file.
+action description, respectively). However, when we edited
+_screenplay.fountain_, we didn't make any changes to _the-end.fountain_, so
+there won't be any visible changes to that file.
 
 _manifest.fountain_:
 
