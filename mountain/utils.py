@@ -13,4 +13,4 @@ def write_files(file_queue):
         file_contents = file_details["contents"]
         with codecs.open(file_path, "w", "utf-8") as f:
             f.write(file_contents)
-            print("Wrote `%s`." % file_path)
+            print("Wrote '%s'." % file_path)
