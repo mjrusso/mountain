@@ -80,7 +80,7 @@ _manifest.fountain_:
 ```
 
 This file probably looks like a lot like how most Fountain screenplays start,
-with the exception of the two notes that start with `#include`.
+with the exception of the two notes that begin with `#include`.
 
 Here, `#include` is a **directive** that points to another file that should be
 included in its place.
@@ -195,7 +195,7 @@ After running this command, _manifest.fountain_ and _intro.fountain_ will
 update to reflect the changes (adding a new section header, and a line of
 action description, respectively). When we edited _screenplay.fountain_ we
 didn't make any changes to _the-end.fountain_, so there won't be any visible
-changes to this file.
+changes to that file.
 
 _manifest.fountain_:
 
@@ -251,7 +251,7 @@ be frequently jumping back and forth between these two modes.
   `#reference ... \reference`, and an error will not be thrown.)
 
 - Mountain does not support recursive includes (i.e., a file that is included
-  via `#include` can't itself include another file via `#include).
+  via `#include` can't itself include another file via `#include`).
 
 ## Development
 
