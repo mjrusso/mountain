@@ -56,6 +56,23 @@ mountain --help
 
 There are two main commands available -- `mountain join`, and `mountain split`.
 
+### Directives
+
+Mountain makes use of two "**directives**:
+
+- `#include`
+- `#reference` (and its companion, `/reference`)
+
+A directive is metadata that is encoded inside of Fountain note. (Fountain does
+not currently have first-class support for metadata.)
+
+`#include` enables a Fountain document to reference another Fountain document.
+
+`#reference ... /reference` is used to wrap a document thta has been inline
+`#include`d.
+
+(Examples are available in the following tutorial.)
+
 ### Tutorial
 
 Create an outline file (or "manifest"). We'll call the file `manifest.fountain`
