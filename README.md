@@ -15,8 +15,8 @@ This isn't Fountain's fault -- it's just a markup language, and file
 organization is a higher-level concern.
 
 That being said, we can change the equation by building tooling (see
-[exhibit A](http://johnaugust.com/2014/fountain-for-coders-or-the-joy-of-writing)
-and [exhibit B](http://slugline.co/blog/shotlists) for examples unrelated to
+[Exhibit A](http://johnaugust.com/2014/fountain-for-coders-or-the-joy-of-writing)
+and [Exhibit B](http://slugline.co/blog/shotlists) for examples unrelated to
 the concern of file organization).
 
 Mountain makes it possible to arbitrarily organize the file layout of your
