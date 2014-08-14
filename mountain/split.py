@@ -15,7 +15,7 @@ def split_combined_document(manifest_path, combined_document_path):
     base_path = os.path.dirname(os.path.abspath(manifest_path))
 
     references = re.findall(
-        "\[\[#reference\s+(.*?)\]\](.*?)\[\[#reference-end\]\]",
+        "\[\[#reference\s+(.*?)\]\](.*?)\[\[/reference\]\]",
         combined_document,
         re.DOTALL)
 
@@ -34,7 +34,7 @@ def split_combined_document(manifest_path, combined_document_path):
         queue_file_write(write_queue, file_path, file_contents)
 
         manifest = re.sub(
-            "\[\[#reference\s+%s\]\].*?\[\[#reference-end\]\]" % re.escape(file_name),
+            "\[\[#reference\s+%s\]\].*?\[\[/reference\]\]" % re.escape(file_name),
             "[[#include %s]]" % file_name,
             manifest,
             0,

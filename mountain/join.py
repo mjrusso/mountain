@@ -34,7 +34,7 @@ def expand_manifest(manifest_path, combined_document_path):
                     "\n" if referenced_file.startswith("\n") else "\n\n",
                     referenced_file,
                     "\n" if referenced_file.endswith("\n") else "\n\n",
-                    "[[#reference-end]]"
+                    "[[/reference]]"
                 ]),
                 manifest)
 

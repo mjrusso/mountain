@@ -41,7 +41,7 @@ Produce an updated manifest file and write to <manifest-path>. In all cases,
 files will be overwritten if they already exist.
 
 All included files in <combined-document-path> must be indicated with the
-[[#reference file-path]] ... [[#reference-end]] directive.
+[[#reference file-path]] ... [[/reference]] directive.
 
 For more details, see https://github.com/mjrusso/mountain.
 
