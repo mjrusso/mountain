@@ -38,8 +38,8 @@ combining files in the Fountain screenplay format.\*
 _\* Technically, there's not really anything in Mountain that's
 Fountain-specific, besides the usage of the
 [notes syntax](http://fountain.io/syntax#section-notes) (`[[ ]]`) to specify
-"directives" (details below). However, it was built specifically to make
-working with long Fountain documents more palatable._
+"directives" (details below). That being said, Mountain was built specifically
+to make working with long Fountain documents more palatable._
 
 ## Directives
 
