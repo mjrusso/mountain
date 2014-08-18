@@ -20,7 +20,7 @@ def split_combined_document(manifest_path, combined_document_path):
     base_path = os.path.dirname(manifest_path)
 
     references = re.findall(
-        "\[\[#reference\s+(.*?)\]\](.*?)\[\[/reference\]\]",
+        "\[\[#reference\s+(\S.*?)\]\](.*?)\[\[/reference\]\]",
         combined_document,
         re.DOTALL)
 

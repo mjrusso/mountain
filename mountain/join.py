@@ -20,7 +20,7 @@ def expand_manifest(manifest_path, combined_document_path):
     # All referenced files in the manifest are relative to this base path.
     base_path = os.path.dirname(manifest_path)
 
-    referenced_file_names = (re.compile("\[\[\s*#include\s+(.*)\s*\]\]")
+    referenced_file_names = (re.compile("\[\[\s*#include\s+(\S.*?)\s*\]\]")
                                .findall(manifest))
 
     for file_name in referenced_file_names:
