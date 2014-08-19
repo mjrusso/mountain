@@ -123,6 +123,14 @@ Four
 
 [[#include this-file-does-not-exist]]
 
+[[#include]]
+
+[[#include ]]
+
+[[#include  ]]
+
+[[#include   ]]
+
 ## 3.2
 
 [[#reference three-two-a.fountain]]
