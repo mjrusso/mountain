@@ -45,16 +45,16 @@ to make working with long Fountain documents more palatable._
 
 Mountain makes use of two **directives**:
 
-- `#include`
-- `#reference` (and its companion, `/reference`)
+- `include:`
+- `reference:` (and its companion, `/reference`)
 
 A directive is metadata that is encoded inside of a Fountain note. (Fountain
 does not currently have first-class support for metadata.)
 
-`#include` enables a Fountain document to reference another Fountain document.
+`include:` enables a Fountain document to reference another Fountain document.
 
-`#reference ... /reference` is used to wrap a document that has been inline
-`#include`'d.
+`reference: ... /reference` is used to wrap a document that has been inline
+`include:`'d.
 
 (Examples are available in the tutorial, below.)
 
@@ -92,7 +92,7 @@ _manifest.fountain_:
 
 = Meet the **Hero**.
 
-[[#include intro.fountain]]
+[[include: intro.fountain]]
 
 # ACT II
 
@@ -100,13 +100,13 @@ _manifest.fountain_:
 
 ## Finale
 
-[[#include the-end.fountain]]
+[[include: the-end.fountain]]
 ```
 
 This file probably looks similar to how most Fountain screenplays start out,
-with the exception of the two notes that begin with `#include`.
+with the exception of the two notes that begin with `include:`.
 
-Here, `#include` is a directive that points to another file that should be
+Here, `include:` is a directive that points to another file that should be
 included in its place.
 
 _intro.fountain_:
@@ -139,7 +139,7 @@ _screenplay.fountain_:
 
 = Meet the **Hero**.
 
-[[#reference intro.fountain]]
+[[reference: intro.fountain]]
 
 FADE IN:
 
@@ -151,7 +151,7 @@ FADE IN:
 
 ## Finale
 
-[[#reference the-end.fountain]]
+[[reference: the-end.fountain]]
 
 > FADE OUT.
 
@@ -162,7 +162,7 @@ FADE IN:
 
 This new document is a combination of _manifest.fountain_ and each of the files
 referenced in the manifest (_intro.fountain_, _the-end.fountain_). These
-referenced files are included in-line and wrapped in the `#reference ...
+referenced files are included in-line and wrapped in the `reference: ...
 /reference` directives.
 
 Mountain works in both directions. To see this in action, edit the combined
@@ -177,7 +177,7 @@ _screenplay.fountain_:
 
 ## The World
 
-[[#reference intro.fountain]]
+[[reference: intro.fountain]]
 
 FADE IN:
 
@@ -191,7 +191,7 @@ A green, open field, stretching for miles in all directions.
 
 ## Finale
 
-[[#reference the-end.fountain]]
+[[reference: the-end.fountain]]
 
 > FADE OUT.
 
@@ -230,7 +230,7 @@ _manifest.fountain_:
 
 ## The World
 
-[[#include intro.fountain]]
+[[include: intro.fountain]]
 
 # ACT II
 
@@ -238,7 +238,7 @@ _manifest.fountain_:
 
 ## Finale
 
-[[#include the-end.fountain]]
+[[include: the-end.fountain]]
 ```
 
 _intro.fountain_:
@@ -257,25 +257,25 @@ be frequently jumping back and forth between these two modes.
 
 ### Additional Notes
 
-- Use a relative file path in an `#include` directive (relative to the
+- Use a relative file path in an `include:` directive (relative to the
   directory that the manifest file is located in). For example, if you write
-  `[[#include a.fountain]]`, then _a.fountain_ should be in the same folder as
+  `[[include: a.fountain]]`, then _a.fountain_ should be in the same folder as
   the manifest file.
 
 - Referenced files can be in different folders. For example,
-  `[[#include act iii/the-end.fountain]]` is legal (_the-end.fountain_ should
+  `[[include: act iii/the-end.fountain]]` is legal (_the-end.fountain_ should
   be located within a folder called _act iii_, relative to
   _manifest.fountain_'s directory).
 
 - Mountain works with any file extension, not just _.fountain_.
 
-- If a file that does not exist is referenced in an `#include` directive, and
-  the `mountain join` command is executed, then the `#include` directive will
+- If a file that does not exist is referenced in an `include:` directive, and
+  the `mountain join` command is executed, then the `include:` directive will
   remain in the resultant combined document. (It will not be converted to
-  `#reference ... \reference`, and an error will not be thrown.)
+  `reference: ... \reference`, and an error will not be thrown.)
 
 - Mountain does not support recursive includes (i.e., a file that is included
-  via `#include` can't itself include another file via `#include`).
+  via `include:` can't itself include another file via `include:`).
 
 ## Development
 

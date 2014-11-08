@@ -4,11 +4,11 @@ FADE IN:
 
 = Meet the **Hero**.
 
-[[#include intro.fountain]]
+[[include: intro.fountain]]
 
 ## Inciting Incident
 
-[[#include inciting-incident.fountain]]
+[[include: inciting-incident.fountain]]
 
 # ACT II
 
@@ -16,7 +16,7 @@ FADE IN:
 
 ## Finale
 
-[[#include the-end.fountain]]
+[[include: the-end.fountain]]
 
 > FADE OUT.
 

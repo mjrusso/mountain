@@ -30,7 +30,7 @@ Combine all files referenced from <manifest-path> into the document at
 overwritten if it already exists.
 
 The files referenced from <manifest-path> must be referenced with the
-[[#include file-path]] directive.
+[[include: file-path]] directive.
 
     $ mountain split <manifest-path> <combined-document-path>
 
@@ -39,7 +39,7 @@ Produce an updated manifest file and write to <manifest-path>. In all cases,
 files will be overwritten if they already exist.
 
 All included files in <combined-document-path> must be indicated with the
-[[#reference file-path]] ... [[/reference]] directive.
+[[reference: file-path]] ... [[/reference]] directive.
 
     $ mountain --version
 
