@@ -303,6 +303,23 @@ python setup.py test
 
 The tests use fixtures located at `./test/fixtures/`.
 
+## Changelog
+
+### pending
+
+- Change directive syntax. `#include` is now `include:`, and `#reference` is
+  now `reference:`. [#2](https://github.com/mjrusso/mountain/pull/2),
+  [#4](https://github.com/mjrusso/mountain/pull/4)
+
+### v0.2.1
+
+- Prevent crash when processing directives that expect arguments but do not
+  include non-whitespace characters. [#1](https://github.com/mjrusso/mountain/pull/1)
+
+### v0.2.0
+
+- Initial release.
+
 ## Copyright
 
 Copyright (c) 2014 [Michael Russo](http://mjrusso.com). See LICENSE for details.
