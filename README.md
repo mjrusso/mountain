@@ -305,7 +305,7 @@ The tests use fixtures located at `./test/fixtures/`.
 
 ## Changelog
 
-### pending
+### v0.3.0
 
 - Change directive syntax. `#include` is now `include:`, and `#reference` is
   now `reference:`. [#2](https://github.com/mjrusso/mountain/pull/2),
