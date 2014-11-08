@@ -1,7 +1,7 @@
 
 # 1
 
-[[#reference one.fountain]]
+[[reference: one.fountain]]
 
 1
 
@@ -9,7 +9,7 @@
 
 ## 1.1
 
-[[#reference one-one.fountain]]
+[[reference: one-one.fountain]]
 
 1-1
 
@@ -17,7 +17,7 @@
 
 # 2
 
-[[#reference two.fountain]]
+[[reference: two.fountain]]
 
 2
 
@@ -25,25 +25,25 @@
 
 ## 2.1
 
-[[#reference part ii/one-a.fountain]]
+[[reference: part ii/one-a.fountain]]
 
 1-A
 
 [[/reference]]
 
-[[#reference part ii/one-b.fountain]]
+[[reference: part ii/one-b.fountain]]
 
 1-B
 
 [[/reference]]
 
-[[#reference part ii/one-c.fountain]]
+[[reference: part ii/one-c.fountain]]
 
 1-C
 
 [[/reference]]
 
-[[#reference part ii/one-d.fountain]]
+[[reference: part ii/one-d.fountain]]
 
 1-D
 
@@ -51,7 +51,7 @@
 
 ## 2.2
 
-[[#reference part ii/two.txt]]
+[[reference: part ii/two.txt]]
 
 2
 
@@ -59,13 +59,13 @@
 
 ## 2.3
 
-[[#reference part ii/subpart iii/a.md]]
+[[reference: part ii/subpart iii/a.md]]
 
 A
 
 [[/reference]]
 
-[[#reference part ii/subpart iii/b.txt]]
+[[reference: part ii/subpart iii/b.txt]]
 
 B
 
@@ -73,7 +73,7 @@ B
 
 ### 2.3.1
 
-[[#reference part ii/subpart iii/1.fountain]]
+[[reference: part ii/subpart iii/1.fountain]]
 
 One
 
@@ -81,7 +81,7 @@ One
 
 ### 2.3.2
 
-[[#reference part ii/subpart iii/2.md]]
+[[reference: part ii/subpart iii/2.md]]
 
 Two
 
@@ -89,7 +89,7 @@ Two
 
 ### 2.3.3
 
-[[#reference part ii/subpart iii/3.txt]]
+[[reference: part ii/subpart iii/3.txt]]
 
 Three
 
@@ -97,7 +97,7 @@ Three
 
 ### 2.3.4
 
-[[#reference part ii/subpart iii/4.fountain]]
+[[reference: part ii/subpart iii/4.fountain]]
 
 Four
 
@@ -105,7 +105,7 @@ Four
 
 ## 2.4
 
-[[#reference part ii/four.txt]]
+[[reference: part ii/four.txt]]
 
 4
 
@@ -113,7 +113,7 @@ Four
 
 # 3
 
-[[#reference three.fountain]]
+[[reference: three.fountain]]
 
 3
 
@@ -121,43 +121,43 @@ Four
 
 ## 3.1
 
-[[#include this-file-does-not-exist]]
+[[include: this-file-does-not-exist]]
 
-[[#include]]
+[[include:]]
 
-[[#include ]]
+[[include: ]]
 
-[[#include  ]]
+[[include:  ]]
 
-[[#include   ]]
+[[include:   ]]
 
 ## 3.2
 
-[[#reference three-two-a.fountain]]
+[[reference: three-two-a.fountain]]
 
 3-2-A
 
 [[/reference]]
 
-[[#reference three-two-b.fountain]]
+[[reference: three-two-b.fountain]]
 
 3-2-B
 
 [[/reference]]
 
-[[#reference three-two-c.fountain]]
+[[reference: three-two-c.fountain]]
 
 3-2-C
 
 [[/reference]]
 
-[[#reference three-two-d.fountain]]
+[[reference: three-two-d.fountain]]
 
 3-2-D
 
 [[/reference]]
 
-[[#reference three-two-e.fountain]]
+[[reference: three-two-e.fountain]]
 
 3-2-E
 

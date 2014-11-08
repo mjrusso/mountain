@@ -1,80 +1,80 @@
 
 # 1
 
-[[#include one.fountain]]
+[[include: one.fountain]]
 
 ## 1.1
 
-[[#include  one-one.fountain]]
+[[include:  one-one.fountain]]
 
 # 2
 
-[[#include      two.fountain]]
+[[include:      two.fountain]]
 
 ## 2.1
 
-[[ #include part ii/one-a.fountain ]]
+[[ include: part ii/one-a.fountain ]]
 
-[[    #include part ii/one-b.fountain]]
+[[    include: part ii/one-b.fountain]]
 
-[[#include part ii/one-c.fountain        ]]
+[[include: part ii/one-c.fountain        ]]
 
-[[ #include part ii/one-d.fountain    ]]
+[[ include: part ii/one-d.fountain    ]]
 
 ## 2.2
 
-[[#include part ii/two.txt]]
+[[include: part ii/two.txt]]
 
 ## 2.3
 
-[[#include part ii/subpart iii/a.md]]
+[[include: part ii/subpart iii/a.md]]
 
-[[#include part ii/subpart iii/b.txt]]
+[[include: part ii/subpart iii/b.txt]]
 
 ### 2.3.1
 
-[[#include part ii/subpart iii/1.fountain]]
+[[include: part ii/subpart iii/1.fountain]]
 
 ### 2.3.2
 
-[[#include part ii/subpart iii/2.md]]
+[[include: part ii/subpart iii/2.md]]
 
 ### 2.3.3
 
-[[#include part ii/subpart iii/3.txt]]
+[[include: part ii/subpart iii/3.txt]]
 
 ### 2.3.4
 
-[[#include part ii/subpart iii/4.fountain]]
+[[include: part ii/subpart iii/4.fountain]]
 
 ## 2.4
 
-[[#include part ii/four.txt]]
+[[include: part ii/four.txt]]
 
 # 3
 
-[[#include three.fountain]]
+[[include: three.fountain]]
 
 ## 3.1
 
-[[#include this-file-does-not-exist]]
+[[include: this-file-does-not-exist]]
 
-[[#include]]
+[[include:]]
 
-[[#include ]]
+[[include: ]]
 
-[[#include  ]]
+[[include:  ]]
 
-[[#include   ]]
+[[include:   ]]
 
 ## 3.2
 
-[[#include three-two-a.fountain]]
+[[include: three-two-a.fountain]]
 
-[[#include three-two-b.fountain]]
+[[include: three-two-b.fountain]]
 
-[[#include three-two-c.fountain]]
+[[include: three-two-c.fountain]]
 
-[[#include three-two-d.fountain]]
+[[include: three-two-d.fountain]]
 
-[[#include three-two-e.fountain]]
+[[include: three-two-e.fountain]]
